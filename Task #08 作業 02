@@ -1,0 +1,15 @@
+#solution 1
+x = input()
+x_counts = {letter: x.count(letter) for letter in set(x)}
+x_counts
+
+#solution 2
+x = input()
+dict={}
+
+for i in x:
+ if i not in dict:
+ dict[i] = 0
+ dict[i] = dict[i]+1
+
+print(dict)
