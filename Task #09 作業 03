@@ -1,0 +1,11 @@
+def f(*args):
+  result = 0
+ for num in args:
+    result = result + num
+ return result
+
+x = input()
+x_split = x.split(",")
+x_int = [int(x) for x in x_split]
+
+print(f(*x_int))
